@@ -10,7 +10,7 @@ body {
   font-family: 'Cairo', sans-serif;
   /* font-family: 'Roboto', sans-serif; */
   color: #011627;
-  background-image: linear-gradient(#02223C, #011627);
+  background: #02223C;
 }
 /* Link Styles */
 
@@ -112,7 +112,7 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #F64740;
   color: white;
   padding: 5px 10px;
   margin: 2px;
