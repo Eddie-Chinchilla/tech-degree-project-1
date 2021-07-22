@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="int-styles.css">
-    <title>Interests</title>
-</head>
-<body>
-    <header>
-        <h1>Interests</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+        <title>Interests</title>
+    </head>
 
-    <main>
-        <section>
-            <h2>Coaching Little League</h2>
-            <div class="container">
+    <body>
+
+        <nav class="main-nav">
+            <ul class="nav">
+              <li class="name text-shadow">Eddie Chinchilla</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="interests.html" class="current">Interests</a></li>
+            </ul>
+        </nav>
+
+        <header class="int-header">
+            <h1>Interests</h1>
+        </header>
+
+        <main class="flex">
+            <section class="card">
+                <h2>Coaching Little League</h2>
                 <p>For almost thirty years of my life I played some form of baseball. Everything from wiffle ball, high level travel ball to slow pitch softball.
-                    Now that my playing time is coming to an end, I am fortunate my son has picked up the game. I love teaching the kids everything I know about the 
-                    wonderful game of baseball.</p>
+                        Now that my playing time is coming to an end, I am fortunate my son has picked up the game. I love teaching the kids everything I know about the 
+                        wonderful game of baseball.</p>
                 <img src="images/little-league.jpg" alt="Kids playing a little league baseball game">
-            </div>
-        </section>
-        <section>
-            <h2>Golf</h2>
-            <div class="container">
-                <p>Golf is something I recently started playing and absolutely love it. </p>
+            </section>
+            <section class="card">
+                <h2>Golf</h2>
+                <p>Golf is something I recently started playing and absolutely love it. I enjoy the skill and focus it takes to go out there and put up a good score.</p>
                 <img src="images/golf-pic.jpg" alt="A ball sitting on the green sitting 25 feet from the flag">
-            </div>
-        </section>
-        <section>
-            <h2>Hiking</h2>
-            <div class="container">
+            </section>
+            <section class="card">
+                <h2>Hiking</h2>
                 <p>One of our favorite things to do as a family is to go hiking. Exploring through the woods is one of the most fun ways to exercise.</p>
                 <img src="images/hiking.jpeg" alt="My daughter walking along a creek">
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <p>Chinchilla</p>
-    </footer>
-</body>
+        <footer>
+            <ul>
+                <li><a href="https://twitter.com/chinchilla4hire" class="social twitter">Twitter</a></li>
+                <li><a href="https://linkedin.com/in/edward-chinchilla-191187193" class="social linkedin">LinkedIn</a></li>
+                <li><a href="https://github.com/Eddie-Chinchilla/tech-degree-project-1.git" class="social github">Github</a></li>
+            </ul>
+            <p class="copyright">Copyright 2021, Eddie Chinchilla</p>
+        </footer>
+    </body>
 </html>
