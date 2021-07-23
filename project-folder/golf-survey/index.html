@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Golf Survey</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Golf Survey</h1>
+            <p id="description">Where is your game?</p>
+        </header>
+        <main class="container">
+            <form id="survey-form">
+            <div>
+                <label id="name-label">Name</label>
+                <input id="name" 
+                        type="text" 
+                        class="form-control text-font-size"
+                        placeholder="Enter Name" 
+                        required>
+            </div>
+            
+            <div>
+                <label id="email-label">Email</label>
+                <input id="email" 
+                        type="email" 
+                        placeholder="Enter Email"
+                        class="form-control text-font-size"
+                        required>
+            </div>
+            
+            <div>
+                <p>What is your current handicap:</p>
+                <select id="dropdown" 
+                        name="handicap"
+                        class="form-control"
+                        required>
+                    <option name="handicap"disabled selected value>Select an option</option>
+                    <option id="scratch" name="handicap">5 or less</option>
+                    <option id="low" name="handicap">6 - 12</option>
+                    <option id="mid" name="handicap">13-20</option>
+                    <option id="high" name="handicap">21+</option>
+                    <option id="none" name="handicap">No handicap</option>
+                </select>
+            </div>
+            
+            <div class="form-control">
+                <p>How often do you play:</p>
+                <label for="everyday">
+                    <input id="everyday" 
+                        type="radio" 
+                        name="frequency"
+                        value="everyday"
+                        class="input-radio"
+                        checked>Everyday</label>
+                <label for="multiple">
+                    <input id="multiple" 
+                        type="radio" 
+                        name="frequency" 
+                        value="multiple"
+                        class="input-radio">Multiple times a week</label>
+                <label for="once">
+                    <input id="once" 
+                        type="radio" 
+                        name="frequency" 
+                        value="once"
+                        class="input-radio">Once a week</label>
+                <label for="month">
+                    <input id="month" 
+                        type="radio" 
+                        name="frequency" 
+                        value="month"
+                        class="input-radio">Few times a month</label>
+                <label for="year">
+                    <input id="year" 
+                        type="radio" 
+                        name="frequency" 
+                        value="year"
+                        class="input-radio">Few times a year</label>
+            </div>
+            
+            <div>
+                <label id="number-label">What is your best score in a round of 18 holes:</label>
+                <input id="number" 
+                        type="number" 
+                        min="18" 
+                        max="150"
+                        class="form-control text-font-size"
+                        placeholder="Enter your best score">
+            </div>
+            
+            <div class="form-control">
+                <p>Which areas of your game are you looking to improve: <span class="clue">(check all that apply)</span></p>
+                <label for="driving">
+                    <input id="driving" 
+                        type="checkbox" 
+                        name="skills" 
+                        value="driving"
+                        class="input-checkbox">Driving</label>
+                <label for="mid-game">
+                    <input id="mid-game" 
+                        type="checkbox" 
+                        name="skills" 
+                        value="mid-game"
+                        class="input-checkbox">Mid-game</label>
+                <label for="short-game">
+                    <input id="short-game" 
+                        type="checkbox" 
+                        name="skills" 
+                        value="short-game"
+                        class="input-checkbox">Short-game</label>
+                <label for="putt">
+                    <input id="putt" 
+                        type="checkbox" 
+                        name="skills"
+                        value="putt"
+                        class="input-checkbox">Putting</label>
+            </div>
+            
+                <div>
+                    <h3>Brief description of where you would like to take your game:</h3>
+                    <textarea id="goals" class="text-font-size" placeholder="Would like to compete in tournaments, be able to beat your buddies on the weekend or just be able to play with the same ball for a round..."></textarea> 
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

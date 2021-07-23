@@ -75,7 +75,7 @@ a:hover {
   overflow: hidden;
   padding-top: 60px;
 }
-.int-header {
+.secondary-header {
   text-align: center;
   padding-top: 60px;
   width: 85%;
@@ -121,7 +121,15 @@ header .profile-image:hover {
 .card:hover {
   transform: scale(1.1);
   border-color: #009DE0;
-}  
+}
+
+.thumbnail {
+  box-shadow: 7px 7px 5px black;
+  transition: all 1s;
+}
+.thumbnail:hover {
+  transform: scale(1.1);
+}
 
 ul.skills {
   padding: 0;
@@ -190,6 +198,12 @@ a.social:hover {
 }
 .text-shadow {
   text-shadow: 1px 1px 1px rgba(19, 18, 18, 0.7);
+}
+
+.coming-soon {
+  font-size: 4rem;
+  color: #313638;
+  font-weight: 900;
 }
 
 /* Styles for larger screens */
